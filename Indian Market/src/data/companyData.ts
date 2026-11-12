@@ -14,6 +14,8 @@ export const companyProfile = {
   name: "Indian Market Events & Promotion",
   shortName: "Indian Market",
   established: "2018",
+  domain: "indianmarketevents.com",
+  websiteUrl: "https://indianmarketevents.com",
   tagline: "Turning Ideas into Impact",
   primaryPositioning: "Brand Activation | Events | Branding",
   additionalPositioning: "Pan-India Execution | People | Production",
@@ -27,6 +29,8 @@ export const companyProfile = {
     phone: "8788972147",
     formattedPhone: "+91 87889 72147",
     email: "indianmarket.pratik@gmail.com",
+    website: "indianmarketevents.com",
+    websiteUrl: "https://indianmarketevents.com",
     officeAddress: "Plot No. 26, Shahu Nagar, Near ITI Bridge, Nashik-422008",
     city: "Nashik",
     state: "Maharashtra",
@@ -304,24 +308,9 @@ export const presenceData: PresenceRegion[] = [
 
 export const clientPartnersData: ClientPartnerItem[] = [
   { 
-    name: "HDFC Bank", 
-    category: "Banking & Financial Services",
-    logo: "/logos/hdfc.png"
-  },
-  { 
-    name: "सार्वजनिक आरोग्य विभाग (महाराष्ट्र शासन)", 
-    category: "Government & Public Health",
-    logo: "/logos/arogya.png"
-  },
-  { 
-    name: "Sun Pharma", 
-    category: "Pharmaceuticals & Healthcare",
-    logo: "/logos/sunpharma.png"
-  },
-  { 
-    name: "HP (Hewlett-Packard)", 
-    category: "Technology & Computing",
-    logo: "/logos/hp.png"
+    name: "Maharashtra Times", 
+    category: "Media & Publication",
+    logo: "/logos/MTM.png"
   },
   { 
     name: "The Times of India", 

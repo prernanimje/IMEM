@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import { MapPin, Phone, Mail, Clock, Send, CheckCircle2, Shield } from 'lucide-react';
+import { MapPin, Phone, Mail, Clock, Send, CheckCircle2, Shield, Globe } from 'lucide-react';
 import { companyProfile } from '../data/companyData';
 
 export const ContactSection: React.FC = () => {
@@ -140,10 +140,28 @@ export const ContactSection: React.FC = () => {
                   <Mail size={20} color="var(--accent-orange)" style={{ flexShrink: 0, marginTop: '2px' }} />
                   <div>
                     <div style={{ fontSize: '0.75rem', fontWeight: 700, letterSpacing: '0.1em', textTransform: 'uppercase', color: 'var(--text-muted)' }}>
-                      Official Email
+                       Official Email
                     </div>
                     <a href={`mailto:${companyProfile.contact.email}`} style={{ color: 'var(--text-primary)', fontSize: '1rem', fontWeight: 600, textDecoration: 'none' }}>
                       {companyProfile.contact.email}
+                    </a>
+                  </div>
+                </div>
+
+                {/* Official Web Portal */}
+                <div style={{ display: 'flex', gap: '1rem', alignItems: 'flex-start' }}>
+                  <Globe size={20} color="var(--accent-orange)" style={{ flexShrink: 0, marginTop: '2px' }} />
+                  <div>
+                    <div style={{ fontSize: '0.75rem', fontWeight: 700, letterSpacing: '0.1em', textTransform: 'uppercase', color: 'var(--text-muted)' }}>
+                      Official Web Domain
+                    </div>
+                    <a 
+                      href="https://indianmarketevents.com" 
+                      target="_blank" 
+                      rel="noopener noreferrer" 
+                      style={{ color: 'var(--accent-orange)', fontSize: '1rem', fontWeight: 600, textDecoration: 'none' }}
+                    >
+                      indianmarketevents.com
                     </a>
                   </div>
                 </div>

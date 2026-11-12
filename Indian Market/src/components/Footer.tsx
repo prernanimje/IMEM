@@ -1,5 +1,5 @@
 import React from 'react';
-import { MapPin, Phone, Mail, Shield, ArrowUp } from 'lucide-react';
+import { MapPin, Phone, Mail, Shield, ArrowUp, Globe } from 'lucide-react';
 import { companyProfile } from '../data/companyData';
 import { CompanyLogo } from './CompanyLogo';
 
@@ -113,6 +113,13 @@ export const Footer: React.FC<FooterProps> = ({ onNavigate }) => {
                 </a>
               </div>
 
+              <div style={{ display: 'flex', gap: '0.6rem', alignItems: 'center' }}>
+                <Globe size={18} color="var(--accent-orange)" style={{ flexShrink: 0 }} />
+                <a href="https://indianmarketevents.com" style={{ color: 'var(--accent-orange)', textDecoration: 'none', fontWeight: 600 }}>
+                  indianmarketevents.com
+                </a>
+              </div>
+
               <div style={{ display: 'flex', gap: '0.6rem', alignItems: 'center', marginTop: '0.2rem' }}>
                 <Shield size={18} color="var(--accent-orange)" style={{ flexShrink: 0 }} />
                 <span>GSTIN: <strong>{companyProfile.contact.gstin}</strong></span>
@@ -128,7 +135,13 @@ export const Footer: React.FC<FooterProps> = ({ onNavigate }) => {
         {/* Footer Bottom Strip */}
         <div className="footer-bottom">
           <div>
-            &copy; {new Date().getFullYear()} {companyProfile.name}. All rights reserved.
+            &copy; {new Date().getFullYear()} {companyProfile.name}. All rights reserved. &bull;{' '}
+            <a 
+              href="https://indianmarketevents.com" 
+              style={{ color: 'var(--accent-orange)', textDecoration: 'none', fontWeight: 600 }}
+            >
+              indianmarketevents.com
+            </a>
           </div>
 
           <div style={{ display: 'flex', alignItems: 'center', gap: '1.5rem' }}>

@@ -2086,9 +2086,9 @@ button, input, textarea, select {
 /* Clients Grid */
 .clients-grid-clean {
   display: grid;
-  grid-template-columns: repeat(3, 1fr);
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
   gap: 1.75rem;
-  max-width: 1040px;
+  max-width: 1120px;
   margin: 0 auto;
 }
 
